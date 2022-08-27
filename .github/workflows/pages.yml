@@ -59,4 +59,4 @@ jobs:
           destination-github-username: 'vishalmamidi'
           destination-repository-name: 'vishalmamidi.github.io'
           user-email: mamidivishalsa@gmail.com
-          target-branch: main
+          target-branch: gh-pages
