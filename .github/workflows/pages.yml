@@ -48,3 +48,15 @@ jobs:
       - name: Deploy to GitHub Pages
         id: deployment
         uses: actions/deploy-pages@v1
+
+
+      - name: Pushes to another repository
+        uses: cpina/github-action-push-to-another-repository@main
+        env:
+          API_TOKEN_GITHUB: ${{ secrets.GITHUB_TOKEN }}
+        with:
+          source-directory: 'build'
+          destination-github-username: 'vishalmamidi'
+          destination-repository-name: 'vishalmamidi.github.io'
+          user-email: mamidivishalsa@gmail.com
+          target-branch: main
